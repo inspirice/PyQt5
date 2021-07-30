@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel
 from PyQt5.QtCore import Qt, QTimer 
 from PyQt5.QtGui import QMovie
 
-class EyesScreen(QWidget):
+class AnimationScreen(QWidget):
     def __init__(self):
         super().__init__()
         self.setFixedSize(1080,800)
@@ -22,7 +22,7 @@ class EyesScreen(QWidget):
 
 app = QApplication(sys.argv)
 
-demo = EyesScreen()
+demo = AnimationScreen()
 demo.show()
 
 app.exit(app.exec_())
